@@ -1,6 +1,11 @@
 {
     "name": "nextgen/website",
-    "description": "NextGen E-Commerce PHP site",
-    "require": {}
+    "description": "NextGen PHP site",
+    "require": {
+      "php": ">=7.4"
+    },
+    "scripts": {
+      "start": "php -S 0.0.0.0:10000 -t ."
+    }
   }
   
