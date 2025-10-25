@@ -1,0 +1,11 @@
+performance shortage : the perfomance of the system is limited the number of users doctors,patients or administration their accesing it whether they are trying to see their visit history ,prescriptions,examination results or the scheduled appointments
+
+fast data updates : the new data and results must be updated shortly for the users of the system
+
+availability : the system must be operational the maximum amount of time the server can handle to ensure that the user can see and view his prescriptions,examination results or the scheduled appointments continuously
+
+Security :the system must be secure to avoid  unauthorized access and data leaks to third party
+
+scalability : the system must be able to handle growth of users and operations done to avoid problems in performance or hardware resource exhaustion
+
+Portability: The system must be able to run on multiple devices to ensure consistent access, usability, and performance across different hardware

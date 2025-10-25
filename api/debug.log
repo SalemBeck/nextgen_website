@@ -1,0 +1,16 @@
+2025-10-25 03:24:15 - API called
+2025-10-25 03:24:15 - POST data: Array
+(
+    [product_id] => 4
+    [email] => nazimdz2019@gmail.com
+    [name] => Nazim Boughida
+)
+
+2025-10-25 03:24:48 - API called
+2025-10-25 03:24:48 - POST data: Array
+(
+    [product_id] => 4
+    [email] => nazimdz2019@gmail.com
+    [name] => prodz w
+)
+
