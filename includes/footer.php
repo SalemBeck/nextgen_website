@@ -87,25 +87,25 @@
     <div class="container">
         <div class="row justify-content-center text-center">
             <div class="col-md-4 mb-4">
-                <h5>Quick Links</h5>
+                <h5 data-translate="footer-quick-links">Quick Links</h5>
                 <ul>
-                    <li><a href="index.php#home">Home</a></li>
-                    <li><a href="index.php#products">Products</a></li>
-                    <li><a href="index.php#contact">Contact</a></li>
+                    <li><a href="index.php#home" data-translate="nav-home">Home</a></li>
+                    <li><a href="index.php#products" data-translate="nav-products">Products</a></li>
+                    <li><a href="index.php#contact" data-translate="nav-contact">Contact</a></li>
                 </ul>
             </div>
 
             <div class="col-md-4 mb-4">
-                <h5>Categories</h5>
+                <h5 data-translate="footer-categories">Categories</h5>
                 <ul>
-                    <li><a href="index.php#products" onclick="filterProductsFromFooter('webdev-services')">Web Dev Services</a></li>
-                    <li><a href="index.php#products" onclick="filterProductsFromFooter('digital-products')">Digital Products</a></li>
-                    <li><a href="index.php#products" onclick="filterProductsFromFooter('formations')">Formations</a></li>
+                    <li><a href="index.php#products" onclick="filterProductsFromFooter('webdev-services')" data-translate="footer-webdev">Web Dev Services</a></li>
+                    <li><a href="index.php#products" onclick="filterProductsFromFooter('digital-products')" data-translate="footer-digital">Digital Products</a></li>
+                    <li><a href="index.php#products" onclick="filterProductsFromFooter('formations')" data-translate="footer-formations">Formations</a></li>
                 </ul>
             </div>
 
             <div class="col-md-4 mb-4">
-                <h5>Contact Info</h5>
+                <h5 data-translate="footer-contact">Contact Info</h5>
                 <ul>
                     <li><i class="fas fa-envelope me-2"></i>info@nextgen.com</li>
                     <li><i class="fas fa-phone me-2"></i>+213 XXX XXX XXX</li>
@@ -127,7 +127,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 NextGen. All rights reserved</p>
+            <p>&copy; <span data-translate="footer-copyright">2025 NextGen. All rights reserved</span></p>
         </div>
     </div>
 </footer>

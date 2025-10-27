@@ -563,13 +563,13 @@ while ($row = $result->fetch_assoc()) {
             <div class="row align-items-center">
                 <div class="col-lg-6 hero-content">
                     
-                    <h1 class="hero-title">Transform Your Digital Vision Into Reality</h1>
-                    <p class="hero-subtitle">Unlock premium web development services, cutting-edge digital products, and expert training programs.</p>
+                    <h1 class="hero-title" data-translate="hero-title">Transform Your Digital Vision Into Reality</h1>
+                    <p class="hero-subtitle" data-translate="hero-subtitle">Unlock premium web development services, cutting-edge digital products, and expert training programs.</p>
                     <div class="d-flex gap-3 flex-wrap">
-                        <a href="#products" class="btn btn-glow">
+                        <a href="#products" class="btn btn-glow" data-translate="hero-btn-explore">
                             <i class="fas fa-rocket me-2"></i>Explore Products
                         </a>
-                        <a href="#contact" class="btn btn-outline-glow">
+                        <a href="#contact" class="btn btn-outline-glow" data-translate="hero-btn-contact">
                             <i class="fas fa-envelope me-2"></i>Get in Touch
                         </a>
                     </div>
@@ -579,15 +579,15 @@ while ($row = $result->fetch_assoc()) {
                         <div class="floating-icon">
                             <i class="fas fa-code"></i>
                         </div>
-                        <h4 style="margin-bottom: 10px;">Web Development</h4>
-                        <p style="color: rgba(255,255,255,0.7); margin: 0;">Build stunning, responsive websites</p>
+                        <h4 style="margin-bottom: 10px;" data-translate="hero-web-dev">Web Development</h4>
+                        <p style="color: rgba(255,255,255,0.7); margin: 0;" data-translate="hero-web-dev-desc">Build stunning, responsive websites</p>
                     </div>
                     <div class="floating-card mt-4" style="animation-delay: 0.5s;">
                         <div class="floating-icon">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
-                        <h4 style="margin-bottom: 10px;">Expert Training</h4>
-                        <p style="color: rgba(255,255,255,0.7); margin: 0;">Master modern development skills</p>
+                        <h4 style="margin-bottom: 10px;" data-translate="hero-training">Expert Training</h4>
+                        <p style="color: rgba(255,255,255,0.7); margin: 0;" data-translate="hero-training-desc">Master modern development skills</p>
                     </div>
                 </div>
             </div>
@@ -597,24 +597,24 @@ while ($row = $result->fetch_assoc()) {
     <!-- Products Header -->
     <section class="products-header" id="products">
         <div class="container">
-            <div class="section-badge">
+            <div class="section-badge" data-translate="products-badge">
                 Our Collection
             </div>
-            <h2>Featured Products & Services</h2>
-            <p>Discover our carefully crafted selection of digital solutions designed to elevate your business</p>
+            <h2 data-translate="products-title">Featured Products & Services</h2>
+            <p data-translate="products-subtitle">Discover our carefully crafted selection of digital solutions designed to elevate your business</p>
             
             <!-- Category Filter -->
             <div class="category-filter">
-                <button class="category-btn active" data-category="all">
+                <button class="category-btn active" data-category="all" data-translate="products-btn-all">
                     <i class="fas fa-th me-2"></i>All Products
                 </button>
-                <button class="category-btn" data-category="webdev-services">
+                <button class="category-btn" data-category="webdev-services" data-translate="products-btn-webdev">
                     <i class="fas fa-code me-2"></i>Web Development
                 </button>
-                <button class="category-btn" data-category="digital-products">
+                <button class="category-btn" data-category="digital-products" data-translate="products-btn-digital">
                     <i class="fas fa-box me-2"></i>Digital Products
                 </button>
-                <button class="category-btn" data-category="formations">
+                <button class="category-btn" data-category="formations" data-translate="products-btn-formations">
                     <i class="fas fa-graduation-cap me-2"></i>Formations
                 </button>
             </div>
@@ -647,17 +647,17 @@ while ($row = $result->fetch_assoc()) {
                                 </div>
                                 <div class="product-body">
                                     <span class="product-category">
-                                        <i class="fas fa-tag me-1"></i> <?= htmlspecialchars($product['category_name']) ?>
+                                        <i class="fas fa-tag me-1"></i> <span data-translate="cat-<?= htmlspecialchars($product['category_slug']) ?>"><?= htmlspecialchars($product['category_name']) ?></span>
                                     </span>
                                     <h3 class="product-title"><?= htmlspecialchars($product['title']) ?></h3>
                                     <div class="product-price">
                                         <span class="price-tag">$<?= number_format($product['price'], 2) ?></span>
                                         <?php if ($product['free_option']): ?>
-                                            <span class="free-tag"><i class="fas fa-gift me-1"></i>Free Option</span>
+                                            <span class="free-tag"><i class="fas fa-gift me-1"></i><span data-translate="products-free-option">Free Option</span></span>
                                         <?php endif; ?>
                                     </div>
                                     <div class="product-actions">
-                                        <a href="product-detail.php?id=<?= $product['id'] ?>" class="btn-view">
+                                        <a href="product-detail.php?id=<?= $product['id'] ?>" class="btn-view" data-translate="products-btn-view">
     <i class="fas fa-eye me-2"></i>View Details
 </a>
                                     </div>
@@ -669,8 +669,8 @@ while ($row = $result->fetch_assoc()) {
             <?php else: ?>
                 <div class="no-products">
                     <i class="fas fa-inbox"></i>
-                    <h3>No Products Available</h3>
-                    <p>Check back soon for new products!</p>
+                    <h3 data-translate="products-no-products">No Products Available</h3>
+                    <p data-translate="products-no-products-desc">Check back soon for new products!</p>
                 </div>
             <?php endif; ?>
         </div>
@@ -680,6 +680,9 @@ while ($row = $result->fetch_assoc()) {
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Translator JS -->
+    <script src="assets/js/translator.js"></script>
     
     <script>
 

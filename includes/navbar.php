@@ -62,6 +62,44 @@
 .navbar-nav .nav-link:hover::after {
     width: 80%;
 }
+
+.language-toggle-btn {
+    background: rgba(132, 145, 217, 0.1);
+    border: 2px solid rgba(132, 145, 217, 0.3);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.language-toggle-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.language-toggle-btn:hover {
+    border-color: var(--vista-blue);
+    background: rgba(132, 145, 217, 0.2);
+    transform: translateY(-2px);
+}
+
+.language-toggle-btn:hover::before {
+    left: 100%;
+}
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
@@ -76,15 +114,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php#home">Home</a>
+                    <a class="nav-link" href="index.php#home" data-translate="nav-home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php#products">Products</a>
+                    <a class="nav-link" href="index.php#products" data-translate="nav-products">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact" onclick="scrollToContact(event)">Contact</a>
+                    <a class="nav-link" href="#contact" onclick="scrollToContact(event)" data-translate="nav-contact">Contact</a>
                 </li>
             </ul>
+            <button class="language-toggle-btn" id="langBtn" onclick="toggleLanguage()">
+                <i class="fas fa-language me-2"></i>العربية
+            </button>
         </div>
     </div>
 </nav>

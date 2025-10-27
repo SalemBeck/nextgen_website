@@ -289,7 +289,7 @@
         <div class="modal-icon-header">
             <i class="fas fa-gift"></i>
         </div>
-        <h2 class="modal-title-custom">Get Free Access</h2>
+        <h2 class="modal-title-custom" data-translate="modal-title">Get Free Access</h2>
         <p class="modal-subtitle" id="freeModalProductTitle">Product Title</p>
     </div>
 
@@ -307,7 +307,7 @@
             
             <div class="form-group-custom">
                 <label class="form-label-custom" for="freeEmail">
-                    <i class="fas fa-envelope me-2"></i>Email Address
+                    <i class="fas fa-envelope me-2"></i><span data-translate="modal-email">Email Address</span>
                 </label>
                 <input 
                     type="email" 
@@ -321,7 +321,7 @@
 
             <div class="form-group-custom">
                 <label class="form-label-custom" for="freeName">
-                    <i class="fas fa-user me-2"></i>Your Name (Optional)
+                    <i class="fas fa-user me-2"></i><span data-translate="modal-name">Your Name (Optional)</span>
                 </label>
                 <input 
                     type="text" 
@@ -338,7 +338,7 @@
                 <li><i class="fas fa-check-circle"></i> Unsubscribe anytime</li>
             </ul>
 
-            <button type="submit" class="btn-submit-custom">
+            <button type="submit" class="btn-submit-custom" data-translate="modal-submit">
                 <i class="fas fa-paper-plane me-2"></i>Get Free Access
             </button>
         </form>
@@ -373,7 +373,7 @@
             
             <div class="form-group-custom">
                 <label class="form-label-custom" for="buyEmail">
-                    <i class="fas fa-envelope me-2"></i>Email Address
+                    <i class="fas fa-envelope me-2"></i><span data-translate="modal-email">Email Address</span>
                 </label>
                 <input 
                     type="email" 

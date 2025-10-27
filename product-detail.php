@@ -391,8 +391,8 @@ while ($media = $media_result->fetch_assoc()) {
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                    <li class="breadcrumb-item"><a href="index.php#products"><?= htmlspecialchars($product['category_name']) ?></a></li>
+                    <li class="breadcrumb-item"><a href="index.php" data-translate="product-detail-breadcrumb-home">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.php#products" data-translate="cat-<?= htmlspecialchars($product['category_slug']) ?>"><?= htmlspecialchars($product['category_name']) ?></a></li>
                     <li class="breadcrumb-item active"><?= htmlspecialchars($product['title']) ?></li>
                 </ol>
             </nav>
@@ -504,24 +504,24 @@ while ($media = $media_result->fetch_assoc()) {
                             <div class="price-amount">$<?= number_format($product['price'], 2) ?></div>
                             <?php if ($product['free_option']): ?>
                                 <div class="free-option-badge">
-                                    <i class="fas fa-gift me-2"></i>Free Option Available
+                                    <i class="fas fa-gift me-2"></i><span data-translate="product-detail-free-option">Free Option Available</span>
                                 </div>
                             <?php endif; ?>
                         </div>
                         
                         <div class="description-section">
-                            <h3 class="description-title"><i class="fas fa-info-circle me-2"></i>Description</h3>
+                            <h3 class="description-title"><i class="fas fa-info-circle me-2"></i><span data-translate="product-detail-description">Description</span></h3>
                             <div class="description-content"><?= nl2br(htmlspecialchars($product['description'])) ?></div>
                         </div>
                         
                         <div class="cta-buttons">
                             <?php if ($product['free_option']): ?>
-                               <a href="#" class="btn-secondary-custom" onclick="openFreeModal(event, <?= $product['id'] ?>, '<?= htmlspecialchars($product['title'], ENT_QUOTES) ?>', <?= $product['price'] ?>)">
+                               <a href="#" class="btn-secondary-custom" onclick="openFreeModal(event, <?= $product['id'] ?>, '<?= htmlspecialchars($product['title'], ENT_QUOTES) ?>', <?= $product['price'] ?>)" data-translate="product-detail-get-free">
     <i class="fas fa-envelope me-2"></i>Get Free Access
 </a>
                             <?php endif; ?>
                             <?php if ($product['paid_option']): ?>
-                                <a href="#" class="btn-primary-custom" onclick="openBuyModal(event, <?= $product['id'] ?>, '<?= htmlspecialchars($product['title'], ENT_QUOTES) ?>', <?= $product['price'] ?>)">
+                                <a href="#" class="btn-primary-custom" onclick="openBuyModal(event, <?= $product['id'] ?>, '<?= htmlspecialchars($product['title'], ENT_QUOTES) ?>', <?= $product['price'] ?>)" data-translate="product-detail-buy">
     <i class="fas fa-shopping-cart me-2"></i>Buy Now
 </a>
                             <?php endif; ?>
@@ -535,6 +535,9 @@ while ($media = $media_result->fetch_assoc()) {
     <?php include 'includes/footer.php'; ?>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Translator JS -->
+    <script src="assets/js/translator.js"></script>
     
     <script>
 
