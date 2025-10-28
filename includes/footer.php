@@ -107,9 +107,9 @@
             <div class="col-md-4 mb-4">
                 <h5 data-translate="footer-contact">Contact Info</h5>
                 <ul>
-                    <li><i class="fas fa-envelope me-2"></i>info@nextgen.com</li>
-                    <li><i class="fas fa-phone me-2"></i>+213 XXX XXX XXX</li>
-                    <li><i class="fas fa-map-marker-alt me-2"></i>Annaba, Algeria</li>
+                    <li><i class="fas fa-envelope me-2"></i>salembakhouche42@gmail.com</li>
+                    <li><i class="fas fa-phone me-2"></i>+213 656901721</li>
+                    <li><i class="fas fa-map-marker-alt me-2"></i>algiers, Algeria</li>
                 </ul>
             </div>
         </div>
@@ -118,10 +118,10 @@
         <div class="row">
             <div class="col-12 text-center">
                 <div class="social-links">
-                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/Nextgeninnovate" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <!-- <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a> -->
+                    <a href="https://www.instagram.com/next.gen.innovate?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" title="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
